@@ -1,0 +1,10 @@
+class CreateTaskTable < ActiveRecord::Migration[6.0]
+  def change
+    create_table :tasks do |t|
+      t.string    :description
+      t.boolean   :completed,    default: false
+      t.datetime  :completed_at
+      t.timestamps
+    end
+  end
+end
