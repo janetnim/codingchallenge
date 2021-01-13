@@ -9,7 +9,7 @@ rails 6.1
 - Access the tasks landing page on: `localhost:3000/tasks`
 
 **How to run the test suite**
-Run tests:
+- Run tests:
 ```
 bundle exec rspec [file_path]
 ```
