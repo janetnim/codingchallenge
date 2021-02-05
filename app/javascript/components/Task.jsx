@@ -10,7 +10,6 @@ class Task extends React.Component {
 
   updateTask = () => {
     const { task } = this.props;
-
     const url = `/api/v1/show/${task.id}`;
     const token = document.querySelector('meta[name="csrf-token"]').content;
 
@@ -27,7 +26,7 @@ class Task extends React.Component {
         }
         throw new Error("Network response was not ok.");
       })
-      .then(() => this.props.history.push("/"))
+      .then(() => window.location.reload(false))
       .catch(error => console.log(error.message));
   }
 
