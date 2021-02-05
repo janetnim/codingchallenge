@@ -3,6 +3,10 @@
   color: #454545;
 }
 
+.tasks-container, .new-task-container {
+  margin: -7px;
+}
+
 .tasks-container {
   .tasks-header {
     display: flex;
@@ -120,7 +124,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 60px;
-      padding: 8px 40px;
+      padding: 10px 40px;
       background: blue;
       color: white;
       border: 1px solid blue;
