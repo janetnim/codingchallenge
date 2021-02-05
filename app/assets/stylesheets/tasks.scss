@@ -1,0 +1,130 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #454545;
+}
+
+.tasks-container {
+  .tasks-header {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 55px;
+    padding-right: 12px;
+
+    a {
+      margin-left: auto;
+    }
+
+    .title {
+      color: white;
+      margin-left: 73px;
+      font-size: 20px;
+    }
+
+    .add-tasks-button {
+      border: none;
+      background: blue;
+      color: white;
+      font-size: 30px;
+      font-weight: 200;
+    }
+  }
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+
+    .task-container {
+      display: flex;
+      flex-direction: row;
+      margin: 8px 20px 20px 10px;
+      align-items: center;
+      font-size: 14px;
+
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .description {
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      .completed-at, .completed {
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.new-task-container {
+  .tasks-header {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 55px;
+    padding-right: 12px;
+
+    .title {
+      color: white;
+      margin-left: 73px;
+      font-size: 20px;
+    }
+  }
+
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+    label {
+      display: flex !important;
+      flex-direction: column;
+      margin: 20px;
+      color: #A0A0A0;
+    }
+
+    label:first-child {
+      margin-top: 50px;
+    }
+
+    .avatar-label {
+      padding-bottom: 25px;
+      border-bottom: 2px solid blue;
+
+      span {
+        margin-top: 20px;
+      }
+    }
+
+    .avatar-input {
+      display: none;
+    }
+
+    textarea {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid blue;
+      height: 50px;
+      width: 92%;
+      margin-left: 20px;
+    }
+
+    .submit {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+      padding: 8px 40px;
+      background: blue;
+      color: white;
+      border: 1px solid blue;
+      border-radius: 4px;
+    }
+  }
+}
