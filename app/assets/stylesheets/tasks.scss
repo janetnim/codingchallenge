@@ -3,6 +3,16 @@
   color: #454545;
 }
 
+.not-found {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    margin-top: 40%;
+  }
+}
+
 .tasks-container, .new-task-container {
   margin: -7px;
 }
